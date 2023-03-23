@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
+            $table->foreignId('character_id')->constrained();
+            $table->foreignId('location_id')->constrained();
             $table->timestamps();
         });
     }
