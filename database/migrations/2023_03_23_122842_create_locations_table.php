@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('person_in_charge');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
